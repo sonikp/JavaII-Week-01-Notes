@@ -1,3 +1,3 @@
 #JavaII-Week-01-Notes
 
-Java II Lesson notes
+Java Programming II: Core Java Programming
