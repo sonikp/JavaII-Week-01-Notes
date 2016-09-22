@@ -3,19 +3,63 @@
 
 
 import javax.swing.*;
+import java.util.*;
 
 public class Example01
 {
 	@SuppressWarnings("deprecation")
 	public static void main(String[] args)
 	{
+		System.out.println("----1.3.6   Self Review Exercises-----\n\n"); // page 54 / 41
 		
-		// page 35 on IntroToProgJava.pdf
+		Date d = new Date();
 		
-		JFrame window = new JFrame("First Title");
-		window.show();		// deprecated
 		
-		//window.setVisible(true);
+		System.out.println("Current Date: " + d);
+		System.out.println(d.getYear());
+		System.out.println(d.getHours());
+		System.out.println(d.getDay());
+		
+		
+		/*
+		// page 35 on IntroToProgJava.pdf 
+		// Window frame exercise
+		JFrame windowOne = new JFrame("One Window");
+		JFrame windowTwo = new JFrame("Two Window");
+		JFrame windowThree = new JFrame("Three Window");
+		
+		
+		
+		// display window
+		//window.show();		// deprecated
+		
+		// create to show windows
+		windowOne.setVisible(true); // replacement
+		windowTwo.setVisible(true); // replacement
+		windowThree.setVisible(true); // replacement
+		
+		// change title name
+		windowOne.setTitle("NEW One Window " + d);
+		windowTwo.setTitle("NEW Two Window " + d);
+		windowThree.setTitle("NEW Three Window " + d);
+		
+		// set window location
+		windowOne.setLocation(600,300);
+		windowTwo.setLocation(1000,300);
+		windowThree.setLocation(600,600);
+		
+		// set window size
+		windowOne.setSize(300, 200);
+		windowTwo.setSize(300, 200);
+		windowThree.setSize(300, 200);
+		*/
+		
+		/*
+		// NOT WORKING 
+		int jfWidth = window.getWidth();	
+		System.out.println(jfWidth);
+		//window.setSize(jfWidth, jfWidth); // can be replaced by
+		*/
 		
 		
 		
@@ -47,7 +91,7 @@ public class Example01
 		//------------
 		 
 		 */
-		System.out.println("----1.1.8   Self Review Exercises-----");
+		
 		
 		/*
 		System.out.println("Integer");

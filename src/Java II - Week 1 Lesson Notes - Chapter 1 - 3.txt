@@ -257,12 +257,65 @@ Assignment - Slide 44	both for:
 		- When trying to denote a backslash character in a file pathname use
 		the forward / instead.
 		
+	**Page 43 lesson notes**
+	
+	1.3 Classes and Objects
+	
+		- Objects contain both 
+			- Data (using variables)
+			- Instructions (using methods)
+			
+		- A method that appears for each object is called an "instance method"
+		
+	Determining how to perform a programming task:
+	
+		- write it down in English as a sequence of steps to be performed
+		- SEPARATION OF CONCERNS: Separate WHAT to do from HOW to do it		
+		- STEPWISE REFINEMENT: consists of a series of steps, refining part of the task
+		into more detailed steps, some in English, some in Java
+		- 
+			
+	Three kinds of Methods
+	
+		- calls to functions are expressions and produce values
+		- calls to procedures are statements and do not produce values, instead they perform a
+		task
+		- constructor; the only purpose is to assign initial values to fields in a folder when
+		folder is created
+		- is same as; assign initial values to variables and methods when a method is created
+		
+		
+	Objects of class String
+	
+		- a String is a class and String value is the name of an object
+
+	1.3.5 Key Concepts
+	
+		- Class: a class is a file drawer of folders
+		
+		- Instances & Objects: folder, instance and object are used interchangably
+		
+		- Procedures, functions, constuctors: 3 types of methods. A call to a:
+			- procedure: performs a task but does not produce a value
+			- function: produces a value
+			- constructor: initializes some/all fields of a newly created object
+			- method call can have arguments, which are expressions
+			- value of arguments are used in some fashion when a method is called
+			- the specification of the method explains how they are used
+			
+		- New-expression: new className(arguments); creates a new object of the class,
+		initializes its fields by calling constructor className and yields as its value
+		of the newly created object
+		
+		- Class as a type: class name may be used as a type, and variable declared with that
+		type can contain the name of a folder "class" of that type.
+		
+		- Null: represents absence of the name of an instance
 
 
-
-
-
-
+	Self Review - 1.3.6
+	
+	
 
 
 
