@@ -2,8 +2,8 @@
 
 
 
-import javax.swing.*;
-import java.util.*;
+//import javax.swing.*;
+//import java.util.*;
 
 public class Example01
 {
@@ -12,6 +12,13 @@ public class Example01
 	{
 		System.out.println("----1.3.6   Self Review Exercises-----\n\n"); // page 54 / 41
 		
+		//System.out.println(new World());
+		World worldObj = new World();
+		Turtle turtle1 = new Turtle(worldObj);
+		System.out.println(turtle1);
+		
+		
+		/*
 		Date d = new Date();
 		
 		
@@ -19,7 +26,7 @@ public class Example01
 		System.out.println(d.getYear());
 		System.out.println(d.getHours());
 		System.out.println(d.getDay());
-		
+		*/
 		
 		/*
 		// page 35 on IntroToProgJava.pdf 
