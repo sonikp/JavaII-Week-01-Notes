@@ -1,13 +1,16 @@
 Java II 
 
-Week 1 Chapter 1-3
+Week 1 Chapter 1-3 
+
+Chapter 1: page - 16
+Chapter 3: page - 140
 
 
 Chapter 1
 
 Introduction:
 
-- A program or algoritbm is like a recipe.
+- A program or algorythm is like a recipe.
 - Fundamentally, compyters are encoding/decoding machines
 - Moore's law: the number of transistors on a chip doubles every two years.
 - Initially stated to be 12 months, then extended to 18 months, and finally it was extended to 2 years
@@ -46,7 +49,7 @@ Classes and Objects:
 		- the stamped-out cookies are like Objects created from that Class
 
 Types and Casting
-	- What's a data type? "Data Type" is findamental to understading how to program
+	- What's a data type? "Data Type" is fundamental to understanding how to program
 	- There are 2 important aspects to any given data type:
 		- 1. Size - How much memory is set aside (allocated) to be used by the data of that data type?
 		- 2. Encoding Scheme - How will the bits in memory be interpreted based on that data type?
@@ -193,11 +196,67 @@ Defining Classes and Creating Objects
 
 Up to Slide 42
 
-	Turtle fred = new Turtle(world);
+	Turtle fred = new Turtle(world);			// new Turtle(world)
+		
+		- creates a turtle object, new Turtle(), Turtle is a classname. We pass in a parameter, the 'world' reference variable from above. 
+		We created a world and assigned the reference value to that world to a reference variable, and pass that reference variable as a 
+		parameter, and a turtle object is created. The reference variable associated to that Turtle object will be 
+		assigned to the reference variable fred, which is of type = Turtle, which is the Turtle object.
+		
+		
 	Turtle george = new Turtle(20, 40, world);
+	
+		- create another new Turtle object, which passes in 3 parameter, 2x number values, and a reference variable. This creates a Turtle object with the 
+		world reference variable, and 2x location parameters, x,y. This is the assigned to reference variable "george" which is of type=Turtle
+		
+	Sending Messages to Objects:
+	
+		- now have two turtle objects in our world object, therefore using reference variables can actually talk to both these objects individually.
+		
+		Statements:
+			fred.setName("Fred the great");	// references object fred, and invokes method setName, and assigns "Fred the great" to the name variable for the fred object
+			george.setName("King George");	// references object george, and invokes method setName, and assigns "King George" to the name variable for the george object
+			fred.forward(); 	// references object fred, invokes the method forward, and provides 50 units to the forward() method to advance the fred object forward by 50 units.
+			System.out.println(fred.getName()); invokes the getName method for fred and calls this name parameter, which is the printed to the screen using the System.out.println method
+			
+Assignment - Slide 44	both for:
+
+	drawSquare();
+	drawRectangle();		
+			
+			
+	
+	
+	Object References and Primitives
+	
+		- object references are different from primitives
+		- primitives:
+			char, byte, int, short, long, float, double & boolean
+			primitive example:
+				int x;
+				x = 5;
+				
+		- object references are variables that refer to true objects, and as such
+		invoke methods upon (send messages to) the objects they refer to.
+		Object Reference example;
+			String courseName = "Java II";
+			courseName.toUpperCase();
+		
+		Object References can invoke methods, whereas Primitives cannot
+	
 
 
-
+	Backslashes and slashes	(slide 49)
+	
+		- backslashes are use with String literals to denot an escape sequence
+			\t	-	tab
+			\n	-	new line
+			\r	-	return
+			\\	-	backslash
+		
+		- When trying to denote a backslash character in a file pathname use
+		the forward / instead.
+		
 
 
 
