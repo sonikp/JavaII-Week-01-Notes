@@ -259,7 +259,6 @@ Assignment - Slide 44	both for:
 		
 	**Page 43 lesson notes**
 	
-	1.3 Classes and Objects
 	
 		- Objects contain both 
 			- Data (using variables)
@@ -315,7 +314,48 @@ Assignment - Slide 44	both for:
 
 	Self Review - 1.3.6
 	
+	Chapter 3.0 Class and Object Methods - page 38 from the book
 	
+	3.3 Classes and Objects	 - real book - page 41
+	
+		- Two types of methods in Java:
+			- class methods
+			- object methods
+			Class Methods: 
+				- are methods that can be executed using the class name or on an object of the class
+				- are used for general methods that dont pertain to a particular object, defined by the key word 'static'
+			Object Methods: 
+				- can only be executed on an object of the class.
+				- work with a particular object's data, the object the method was called on. 
+	
+	3.3.1 Invoking class methods
+	
+		ClassName.methodName();
+		
+		- Wrapper Class: is used to wrap around primitive types in order to have objects to work with. Since primitive types are not objects,
+		you wouldn't be able to use them in collections. However if you wrap a primitive type with a wrapper object, you will be able to use
+		it with classes that require objects.
+		
+	3.3.2 Executing Object Methods
+	
+		objectReference.methodName();
+		
+		Object reference can be the name of an object variable. You cant invoke object methods using the class name like you can with class methods.
+	
+	3.4 Working with Turtles
+	
+	3.4.2 Creating Objects
+	
+		new Class(parameterList);
+	
+	3.4.3 Sending Messages to Objects
+	
+		objectReference.message(parameterList);
+		
+	3.5 Creating Methods
+	
+	
+		
 
 
 

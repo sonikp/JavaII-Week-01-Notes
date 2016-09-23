@@ -8,14 +8,102 @@
 public class Example01
 {
 	@SuppressWarnings("deprecation")
+	
+	
+	public void drawSquare()
+	{
+		
+	}
+	
+	
 	public static void main(String[] args)
 	{
 		System.out.println("----1.3.6   Self Review Exercises-----\n\n"); // page 54 / 41
 		
+		System.out.println(new Picture());
+		
+		Picture picture = new Picture();
+		picture.show();
+		System.out.println(FileChooser.pickAFile());
+		
+		
+		/*
+		// Turtle and world objects
 		//System.out.println(new World());
 		World worldObj = new World();
+		System.out.println(worldObj);
+		
 		Turtle turtle1 = new Turtle(worldObj);
 		System.out.println(turtle1);
+		
+		Turtle turtle2 = new Turtle(30, 50, worldObj);
+		System.out.println(turtle2);
+		
+		turtle1.forward(20);
+		turtle1.turnLeft();
+		turtle1.forward(30);
+		turtle1.turnRight();
+		turtle1.forward(40);
+		turtle1.turn(-45);
+		turtle1.forward(30);
+		turtle1.turn(90);
+		turtle1.forward(20);
+		
+		turtle2.turnRight();
+		turtle2.forward(200);
+		turtle2.turnRight();
+		turtle2.forward(200);
+		
+		World world1 = new World();
+		Turtle turtle3 = new Turtle(50, 50, world1);
+		turtle3.setName("Fat Blob");
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		
+		turtle3.penUp();
+		turtle3.moveTo(200, 200);
+		turtle3.hide();
+		turtle3.penDown();
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		turtle3.turnRight();
+		turtle3.forward(30);
+		System.out.println(turtle3);
+		
+		System.out.println(world1.getWidth());
+		
+		*/
+		
+		
+		
+		
+		
+		
+		
+		/*
+		//Ex 3.3.2
+		
+		String name = "Farmer fred";
+		System.out.println(name);
+		
+		String lowerName = name.toLowerCase();
+		System.out.println(lowerName);
+		
+		String upperName = name.toUpperCase();
+		System.out.println(upperName);
+		
+		System.out.println(name);
+		*/	
 		
 		
 		/*
@@ -138,6 +226,8 @@ public class Example01
 		daysOfRain = daysOfRain / 2.0;
 		System.out.println(daysOfRain);
 		*/
+		
+		
 		
 	}
 }
