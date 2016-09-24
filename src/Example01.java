@@ -20,11 +20,83 @@ public class Example01
 	{
 		System.out.println("----1.3.6   Self Review Exercises-----\n\n"); // page 54 / 41
 		
-		System.out.println(new Picture());
+		// System.out.println(new Picture());
+		
+		// ---Exercise: figure out this format
+		
+		// --- English, what I remember
+		
+		// choose a file = FileChooser.pickAFile();
+		// open a file = System.out.println(FileChooser.pickAFile());
+		// create a picture object Picture pictureObj = new Picture();
+		// display picture object = pictureObj.show();
+		
+		// putting that into practice
+		
+		// new Picture(FileChooser.pickAFile()).show();
+		
+		String selectFile = FileChooser.pickAFile();
+		Picture pictureObj1 = new Picture(selectFile);
+		pictureObj1.show();
+		
+		
+		
+		
+		// 3.6.7 Naming a result
+		/*
+		String thisSoundFile = "/Users/mfloerchinger/a.JavaSources/aah.wav";
+		System.out.println(thisSoundFile);
+		String myFileName = FileChooser.pickAFile();
+		System.out.println(myFileName);
+		*/
+		//Picture myPicture = new Picture(myFileName);
+		//System.out.println(myFileName);
+		
+		/*
+		// this is not working, and it should
+		String thisSoundFile = "/Users/mfloerchinger/a.JavaSources/aah.wav";
+		System.out.println(thisSoundFile);
+		String myFile = FileChooser.pickAFile(thisSoundFile);
+		//myFile.play();
+		*/
+		
+		// 3.6.5 Playing a sound method 1
+		//new Sound(FileChooser.pickAFile()).play();
+		
+		/*
+		// Playing a sound method 2
+		String soundFile = FileChooser.pickAFile();
+		Sound soundObj = new Sound(soundFile);
+		soundObj.play();
+		*/
+		
+		// or
+		//System.out.println(new Sound(FileChooser.pickAFile()));
+		
+		
+		/* --------
+		// 3.6.3 Two methods to show picture files
+		// 1. this shows the picture file
+		new Picture(FileChooser.pickAFile()).show();	
+		
+		// 2nd method to show picture file
+		String fileName = FileChooser.pickAFile();
+		Picture pictureObj = new Picture(fileName);
+		pictureObj.show();
+		//------------
+		 */
+		
+		/*
 		
 		Picture picture = new Picture();
+		FileChooser.pickAFile();
+		
 		picture.show();
-		System.out.println(FileChooser.pickAFile());
+		System.out.println(FileChooser.pickAFile()); // select picture file, but does not show it.
+		
+		
+		 */
+		
 		
 		
 		/*
