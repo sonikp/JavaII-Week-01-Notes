@@ -1,6 +1,7 @@
-/* Figure 3.8 from book
- * This is a local version I created within my project
- * Not sure if this was the right thing to do.
+/* Turtle.java Assignment week 1
+ * 
+ * Michael Floerchinger
+ * 
  */
 
 
@@ -63,10 +64,14 @@ public class Turtle extends SimpleTurtle
     super(p);
   }  
   
-  /////////////////// methods ///////////////////////
+  
   
   /*
+   * ******************************************************
+   * Michael Floerchinger
    * 
+   * Additional Methods created here
+   * ******************************************************
    */
 
   public void drawSquare()
@@ -95,7 +100,7 @@ public class Turtle extends SimpleTurtle
 	  this.forward(length);
   }
   
-  public void drawSquarePram(int length)
+  public void drawSquareParam(int length)
   {
 	  
 	  this.turnRight();
@@ -108,9 +113,48 @@ public class Turtle extends SimpleTurtle
 	  this.forward(length);
   }
   
+  public void drawRectangleParam(int length)
+  {
+	  
+	  this.turnLeft();
+	  this.forward(length);
+	  this.turnLeft();
+	  this.forward(length * 2);
+	  this.turnLeft();
+	  this.forward(length);
+	  this.turnLeft();
+	  this.forward(length * 2);
+  }
+  
   public static void main(String[] args)
   {
-    World earth = new World();
+    
+	// Assignment - need methods for drawRectangle, drawHexagon, drawPentagon
+	
+	  World earth = new World();
+	  Turtle bertyDaTurtle = new Turtle(earth);
+	  Turtle berthaDaOtherTurtle = new Turtle(earth);
+	  
+	  bertyDaTurtle.drawSquareParam(60);
+	  bertyDaTurtle.drawRectangleParam(60);
+	  berthaDaOtherTurtle.penUp();
+	  berthaDaOtherTurtle.moveTo(40,90);
+	  
+	  
+	  /*
+		// first pass assignment
+		World earth = new World();
+		Turtle turtleSqrParm = new Turtle(earth);
+		turtleSqrParm.drawSquareParam(30);
+		
+		Turtle turtleRecParm = new Turtle(earth);
+		turtleRecParm.drawRectangleParam(90);
+		*/
+	  
+	  
+	/*
+    // previous examples
+	World earth = new World();
     Turtle turtle1 = new Turtle(earth);
     turtle1.drawSquare();
     
@@ -129,6 +173,7 @@ public class Turtle extends SimpleTurtle
     System.out.println(world1.getClass());
     System.out.println(turtle1.getClass());
     System.out.println(turtle2.getClass());
+    */
   }
 
 } // this } is the end of class Turtle, put all new methods before this
